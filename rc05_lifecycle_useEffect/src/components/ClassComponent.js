@@ -11,10 +11,21 @@ class ClassComponent extends React.Component {
 
   // increase = () => this.setState({ name: 'Felix' })
 
-  //* component oluştuktan sonra gerçekleşecek eylem
+  //* component oluştuktan sonra gerçekleşecek eylem, sadece ilk oluşumda çalışır
   componentDidMount() {
     console.log('Class Comp Mounted')
     // this.increase()
+  }
+
+  //* component güncellendiğinde gerçekleşecek eylem
+  componentDidUpdate(prevProps, prevState) {
+    // console.log('Class Component Updated!')
+    console.log(prevState.count)
+    prevState.count !== this.state.count && console.log('Class Component Updated!')
+  }
+//component öldüğünde gerçekleşecek eylem
+  componentWillUnmount() {
+    console.log("Class Comp will unmount bye bye!");
   }
 
   render() {
