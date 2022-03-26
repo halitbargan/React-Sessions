@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import ClassComponent from './components/ClassComponent'
+import UseEffectComp from './components/UseEffectComp'
 import UseStateComp from './components/UseStateComp'
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
       {/* <h2>LifeCycles</h2> */}
       {/* <button onClick={() => setIsVisible(!isVisible)}>Toggle Comp</button>
       {isVisible && <ClassComponent />} */}
-      <UseStateComp/>
+      {/* <UseStateComp/> */}
+      <UseEffectComp />
       
     </div>
   )
