@@ -1,5 +1,25 @@
 import React, { useState, useEffect } from 'react'
 
+  // Her renderda calisir.
+  // useEffect(() => {
+  //   console.log('UseEffect!');
+  // });
+
+  // Ilk renderda, bir kere calisir.
+  // useEffect(() => {
+  //   console.log('UseEffect!');
+  // }, []);
+
+  // Sadece count degiskeni degistiginde calisiyor. 
+  // useEffect(() => {
+  //   console.log('UseEffect!');
+  // }, [count]);
+
+  // Hem count, hem de age degiskeni degistiginde calisiyor. 
+  // useEffect(() => {
+  //  console.log('UseEffect!');
+  //}, [count, age]);
+
 const UseEffectComp = () => {
   const [count, setCount] = useState(0)
   const [age, setAge] = useState(4)
