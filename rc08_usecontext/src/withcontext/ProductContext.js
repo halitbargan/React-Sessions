@@ -1,4 +1,4 @@
-import React,{createContext} from 'react'
+import {createContext,useState} from 'react'
 
 export const ProductContext = createContext()
 
@@ -12,20 +12,28 @@ export const ProductProvider = (props)=>{
     const [products, setProducts] = useState(initialProducts)
 
 
-    const increasePrice=(event)=>{
+    const increasePrice=(id)=>{
         const newProducts=[...products];
-        console.log('increasePrice',event.target.id)
-        newProducts[event.target.id].price=newProducts[event.target.id].price+1;
+        console.log('increasePrice',id)
+        // 
+        newProducts[id].price+=1
         setProducts(newProducts)
 //         newProducts[e.target.id].price += 1 ya da ++
 // newProducts[e.target.id].price -= 1 ya da --
     };
-    const decreasePrice=(event)=>{
+    const decreasePrice=(id)=>{
         const newProducts=[...products];
         console.log('decreasePrice')
-        newProducts[event.target.id].price=newProducts[event.target.id].price-1;
+        newProducts[id].price-=1
         setProducts(newProducts)
     };
+
+    return(
+        <ProductContext.Provider
+        value={{products, increasePrice, decreasePrice,setProducts}}>
+            {props.children}
+        </ProductContext.Provider>
+    )
 }
  
 

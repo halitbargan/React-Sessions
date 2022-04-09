@@ -1,13 +1,19 @@
-import React from 'react'
-import Product from '../withcontext/Product'
+import React, {useContext} from "react";
+import Product from "./Product";
+import {ProductContext} from "./ProductContext"
 
 const ProductList = () => {
+  const { products } = useContext(ProductContext);
   return (
     <div>
-      <Product />
+       {products.map((product) => (
+        <Product
+          key={product.id}
+          product={product}
+        />
+      ))}
     </div>
+  );
+};
 
-  )
-}
-
-export default ProductList
+export default ProductList;

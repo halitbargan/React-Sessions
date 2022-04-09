@@ -1,10 +1,14 @@
 import React from 'react'
 import ProductList from '../withcontext/ProductList'
+import {ProductProvider} from "./ProductContext"
 
 const WithContextApp = () => {
   return (
     <div>
-        <ProductList/>
+        <ProductProvider>
+            <ProductList/>
+        </ProductProvider>
+        
     </div>
   )
 }
