@@ -19,9 +19,7 @@ function App() {
         img="https://cdn.pixabay.com/photo/2015/01/27/09/58/man-613601__340.jpg"
         tel="5555222222"
       />
-      <data>
-        
-      </data>
+      
     </>
   );
 }
