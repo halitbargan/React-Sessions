@@ -1,10 +1,10 @@
-import React from 'react'
+import Card from "./components/card/Card"
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>APP</h1>
-    </div>
+    <>
+      <Card />
+    </>
   )
 }
 
