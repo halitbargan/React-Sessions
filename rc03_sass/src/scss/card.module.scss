@@ -1,22 +1,27 @@
 @import './variables';
 
 .container {
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 5rem;
-  gap: 2rem;
-  .card {
-    padding: 1.5rem;
-    max-width: 300px;
+  gap:2rem;
+  .card{
+    max-width:300px;
     border-radius: 1rem;
     text-align: center;
     box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    
+
+  }
+
+}
     img {
       width: 50%;
-      margin: 1rem;
+      margin:1rem;
       border-radius: 50%;
     }
     h1 {
@@ -27,10 +32,10 @@
     }
     .btn-container {
       button {
-        border-radius: 1rem;
+        border-radius: 1.5rem;
         color: white;
         cursor: pointer;
-        border: none;
+        border:none;
         &:hover {
           opacity: 0.5;
         }
@@ -39,12 +44,12 @@
       &--small {
         background-color: $olive;
         padding: 0.8rem;
-        margin-right: 0.3rem;
+        margin-right: 0.6rem;
       }
       &--large {
         background-color: $darkPink;
         padding: 0.8rem 1.6rem;
       }
     }
-  }
-}
+  
+
