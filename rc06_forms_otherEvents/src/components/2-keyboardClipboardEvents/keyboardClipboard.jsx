@@ -6,8 +6,9 @@ const KeyboardClipboard = () => {
     const handleKeyDown=(e)=>{
         // console.log(e.keyCode);
         e.target.value = e.target.value.toUpperCase();
+        e.keyCode===13 && alert('Entera basildi');
     };
-    
+
   return (
     <div className="container text-center">
         <h2>CLIPBOARD EVENTS</h2>
