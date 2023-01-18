@@ -8,15 +8,16 @@ function App() {
 
   return (
     <div className="container text-center" style={{ marginTop: '10rem' }}>
-      {/* <button className="btn btn-dark" onClick={() => setShow(!show)}>
+      <button className="btn btn-dark" onClick={() => setShow(!show)}>
         {show ? 'Hide' : 'Show'}
-      </button> */}
+      </button>
 
-      {/* Conditional Rendering (Short-Circuit) */}
-      {/* {show && <LifeCycleMethods />} */}
-      {/* {show ? <LifeCycleMethods /> : null} */}
-      {/* {show && <UseEffectHook/>} */}
-      <Users />
+      {/* Conditional Rendering (Short-Circuit)  */}
+      {show && <LifeCycleMethods />}
+      {/* {show ?  <LifeCycleMethods /> : null} */}
+    
+      {/* {show && <UseEffectHook/>}
+      {/* <Users /> */}
     </div>
   );
 }
