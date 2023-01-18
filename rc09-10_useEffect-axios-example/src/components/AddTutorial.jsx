@@ -5,10 +5,7 @@ const AddTutorial = ({ addTutorial }) => {
   const [desc, setDesc] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    addTutorial({ title: title, description: desc });
-    setTitle('');
-    setDesc('');
+    
   };
 
   return (
