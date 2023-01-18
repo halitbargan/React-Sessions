@@ -13,10 +13,9 @@ function App() {
       </button>
 
       {/* Conditional Rendering (Short-Circuit)  */}
-      {show && <LifeCycleMethods />}
+      {/* {show && <LifeCycleMethods />} */} 
       {/* {show ?  <LifeCycleMethods /> : null} */}
-    
-      {/* {show && <UseEffectHook/>}
+      {show && <UseEffectHook/>}
       {/* <Users /> */}
     </div>
   );
