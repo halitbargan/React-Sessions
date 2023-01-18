@@ -19,7 +19,7 @@
 import React from 'react';
 
 class LifeCycleMethods extends React.Component {
-  //! 1-) Bir componentin olsuturulmasinda cagrilir
+  //! 1-) Bir componentin olusturulmasinda cagrilir
   constructor(props) {
     console.log('Contructor running');
     super(props);
