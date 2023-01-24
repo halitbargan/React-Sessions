@@ -55,11 +55,11 @@ const UseEffectHook = () => {
   // };
 
   // useEffect(() => {
-  ////   //! ComponentDidMount
+  ////  //? ComponentDidMount
   //   const timerId = setInterval(fetchData, 1000);
   //   console.log('Mounted');
   //   return () => {
-  ////     //! componentWillUnmount
+  ////     //? componentWillUnmount
   //      clearInterval(timerId);
   //      console.log('Unmounted');
   //   };
