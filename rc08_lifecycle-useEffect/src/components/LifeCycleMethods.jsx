@@ -35,13 +35,13 @@ class LifeCycleMethods extends React.Component {
   };
 
   //? 3-) Bir component DOM agacina eklendiginde calistirilir.
-  //? (İlk render sonrasi).
-  //? Her yasam dongusu icin bir kere calisir.
+  //! (İlk render sonrasi).
+  //! Her yasam dongusu icin bir kere calisir.
   componentDidMount() {
     console.log('Mounted');
   }
-  //? 4-) Bu metot ilk render haric dige tüm render'lardan sonra cagrilir.
-  //?  prevState ve prevProps degerlerini parametre olarak alabilir.
+  //! 4-) Bu metot ilk render haric dige tüm render'lardan sonra cagrilir.
+  //!  prevState ve prevProps degerlerini parametre olarak alabilir.
   componentDidUpdate() {
     console.log('Updated');
   }
