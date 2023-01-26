@@ -65,12 +65,12 @@ function Register() {
         sx={{
           margin: "1rem auto",
           bgcolor: "primary.main",
-          // bgcolor: blue[500],
+          // bgcolor: blue[600],
         }}
       >
         <LockOutlined />
       </Avatar>
-      <Typography sx={{ margin: "1rem" }} variant="h4">
+      <Typography sx={{ margin: "2rem" }} variant="h4">
         Sign Up
       </Typography>
       <Formik
